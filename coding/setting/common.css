@@ -54,10 +54,10 @@ li{
 
 /* 로그인, 더보기 */
 .body_1rem{
-    font-size: 1rem; /*16px*/
-     white-space: nowrap;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    white-space: nowrap;
 }
 .body_14px{
-    font-size: 0.875rem; /* 14px */
-     white-space: nowrap;
+     font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+    white-space: nowrap;
 }
