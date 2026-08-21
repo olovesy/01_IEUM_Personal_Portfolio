@@ -1,0 +1,15 @@
+@charset "utf-8";
+@media(max-width:1440px){
+    .container{width: 100%;}
+    
+    
+}
+@media(max-width:768px){
+    .banner_title {
+        font-size: 2rem;
+    }
+
+    .banner_desc {
+        font-size: 1rem;
+    }
+}

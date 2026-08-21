@@ -1,0 +1,89 @@
+@charset "utf-8";
+#header{
+    
+   width: calc(100% - 40px);
+        width: 100%;
+     
+        /* background-color: #a87676; */
+}
+#banner{
+  
+}
+.container{
+    
+     display: flex;
+     background-color: #c7e5c9;
+     margin: 0 auto;
+     width: calc(100% - 40px);
+
+    
+  margin: 0 auto;
+     
+     
+     
+     
+     
+}
+
+
+ .logo{
+     margin-right: auto; /*.nav의 왼쪽 마진을 자동으로 최대한   
+                            크게 만들어 nav를 오른쪽으로 이동시킵니다. 
+                            이것은 Flexbox에서 자주 사용하는 오른쪽 정렬 방법*/
+
+
+}
+ .logo img{
+    /* background-color: aqua; */
+}
+
+.nav{
+      
+}
+.nav ul{
+    display: flex;
+}
+ .nav ul li{
+    
+}
+ .nav ul li a{
+    margin: 0 20px;
+    line-height: 95px;
+    /* background-color: #dee5f0; */
+    
+  
+   
+   
+}
+  .subnav{
+    display: flex;
+    margin: 0px 18px;
+    line-height: 130px;
+
+
+     
+   
+}
+ .subnav .login{}
+ .subnav .login a{
+    
+
+}
+
+ .subnav .translate{padding-left: 10px;}
+
+#banner .banner_img{
+ width: 100%;
+  height: clamp(180px, 30vw, 400px);
+  overflow: hidden;
+  object-fit: cover;
+  object-position: right;
+}
+#banner .banner_img .img{
+    width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
