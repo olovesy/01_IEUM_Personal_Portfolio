@@ -3,6 +3,22 @@
 
 
 html
+
+.skip-link {
+    position: absolute;
+    top: -48px;
+    left: 10px;
+    z-index: 2000;
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #125bd1;
+    color: #fff;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
 /* 헤더 */
 
 #header {

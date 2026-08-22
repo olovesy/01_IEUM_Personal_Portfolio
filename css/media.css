@@ -34,7 +34,7 @@ object-position: center;
 /* 모바일 */
 @media (max-width: 600px) {
     #header .pc > .container {
-        /* overflow-x: auto; */
+        overflow-x: visible;
     }
 
     .nav ul li a {
@@ -56,5 +56,28 @@ object-position: center;
     .split_home,
     .institution_grid {
         grid-template-columns: 1fr;
+    }
+}
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #125bd1;
+    outline-offset: 2px;
+}
+
+@media (max-width: 420px) {
+    .logo img {
+        width: 90px;
+    }
+
+    .nav ul li a {
+        margin: 0 3px;
+        font-size: 12px;
+    }
+
+    .subnav {
+        margin-left: 4px;
+        font-size: 12px;
     }
 }
