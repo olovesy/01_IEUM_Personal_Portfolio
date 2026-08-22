@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>의료·도움 | 이음</title>
+  <link rel="stylesheet" href="../setting/vars.css">
+  <link rel="stylesheet" href="../setting/font.css">
+  <link rel="stylesheet" href="../setting/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <link rel="stylesheet" href="../css/mypage.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header id="header">
+    <section class="pc">
+      <div class="container">
+        <h1 class="logo"><a href="index.html"><img src="../img/logo.png" alt="이음 홈"></a></h1>
+        <nav class="nav bodylarge_18px" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="sub1page.html">생활정보</a></li>
+            <li><a href="sub2page.html" aria-current="page">의료·도움</a></li>
+            <li><a href="sub3page.html">취업서비스</a></li>
+            <li><a href="sub4page.html">정보공유</a></li>
+          </ul>
+        </nav>
+        <div class="subnav body_14px">
+          <a class="mypage-link" href="mypage.html">마이페이지</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="container">
+        <figure class="banner_img"><img src="../img/bannerimg.png" alt="함께하는 이웃"></figure>
+        <div class="banner_content">
+          <h2 class="banner_title">장애인과 가족을 위한 정보 커뮤니티</h2>
+          <p class="body_1rem">필요한 정보를 찾고 서로의 경험을 이어보세요.</p>
+          <form class="search_box body_1rem" id="search">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" aria-label="의료·도움 정보 검색" placeholder="병원·재활·복지·상담 정보를 검색해 보세요.">
+            <button type="submit">검색</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <div class="container breadcrumb" aria-label="현재 위치">
+      <a href="index.html">⌂ 홈</a><span> &gt; </span><strong>의료·도움</strong>
+    </div>
+
+    <section class="subpage container" aria-labelledby="page-title">
+      <h2 id="page-title">의료·도움</h2>
+      <p class="notice-text">의료정보는 참고용으로 제공됩니다. 정확한 진단과 치료는 의료기관에 문의해 주세요.</p>
+
+      <div class="category-tabs" role="tablist" aria-label="의료·도움 분류">
+        <button type="button" class="active" role="tab" aria-selected="true">의료기관</button>
+        <button type="button" role="tab" aria-selected="false">재활·치료</button>
+        <button type="button" role="tab" aria-selected="false">복지서비스</button>
+        <button type="button" role="tab" aria-selected="false">상담기관</button>
+        <button type="button" role="tab" aria-selected="false">긴급 도움</button>
+      </div>
+
+      <div class="filter-box">
+        <label for="medical-area">지역</label>
+        <select id="medical-area">
+          <option>전체 지역</option>
+          <option>서울특별시</option>
+          <option>경기도</option>
+          <option>부산광역시</option>
+        </select>
+        <label for="medical-type">서비스 유형</label>
+        <select id="medical-type">
+          <option>전체 유형</option>
+          <option>병원</option>
+          <option>재활기관</option>
+          <option>복지서비스</option>
+          <option>상담기관</option>
+        </select>
+        <label for="medical-search">검색</label>
+        <input id="medical-search" type="search" placeholder="기관명 또는 서비스를 입력하세요.">
+        <button type="button" class="blue-button">검색</button>
+      </div>
+
+      <div class="list-head">
+        <p>의료·도움 기관 <strong>18</strong>건</p>
+        <label for="medical-sort" class="sr-only">정렬 방법</label>
+        <select id="medical-sort">
+          <option>가까운 순</option>
+          <option>최신순</option>
+          <option>인기순</option>
+        </select>
+      </div>
+
+      <div class="medical-list">
+        <article class="medical-card">
+          <div class="medical-icon" aria-hidden="true">+</div>
+          <div>
+            <h3>서울 장애인종합복지관</h3>
+            <p>상담, 재활, 건강관리와 일상생활 지원 서비스를 제공합니다.</p>
+            <span>서울특별시 · 복지서비스</span>
+            <p class="phone">전화 02-0000-0000</p>
+          </div>
+          <a href="#detail">기관 정보 보기</a>
+        </article>
+        <article class="medical-card">
+          <div class="medical-icon" aria-hidden="true">+</div>
+          <div>
+            <h3>나눔 재활의학과</h3>
+            <p>물리치료와 작업치료 등 장애인 재활 프로그램을 운영합니다.</p>
+            <span>경기도 · 재활·치료</span>
+            <p class="phone">전화 031-0000-0000</p>
+          </div>
+          <a href="#detail">기관 정보 보기</a>
+        </article>
+        <article class="medical-card">
+          <div class="medical-icon" aria-hidden="true">+</div>
+          <div>
+            <h3>함께하는 마음 상담센터</h3>
+            <p>장애인과 가족을 위한 심리상담과 생활상담을 지원합니다.</p>
+            <span>서울특별시 · 상담기관</span>
+            <p class="phone">전화 02-1111-2222</p>
+          </div>
+          <a href="#detail">기관 정보 보기</a>
+        </article>
+        <article class="medical-card">
+          <div class="medical-icon" aria-hidden="true">+</div>
+          <div>
+            <h3>지역 보건소 건강지원실</h3>
+            <p>지역 주민을 위한 건강 상담과 복지서비스 연계를 제공합니다.</p>
+            <span>부산광역시 · 의료기관</span>
+            <p class="phone">전화 051-3333-4444</p>
+          </div>
+          <a href="#detail">기관 정보 보기</a>
+        </article>
+      </div>
+
+      <nav class="pagination" aria-label="페이지 이동">
+        <a href="#previous">&lt; 이전</a>
+        <a class="current" href="#page1" aria-current="page">1</a>
+        <a href="#page2">2</a>
+        <a href="#page3">3</a>
+        <a href="#page4">4</a>
+        <a href="#page5">5</a>
+        <span>...</span>
+        <a href="#page18">18</a>
+        <a href="#next">다음 &gt;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+    <script src="../js/mobile-menu.js"></script>
+</body>
+</html>
+

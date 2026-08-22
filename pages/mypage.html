@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 | 이음</title>
+    <link rel="stylesheet" href="../setting/vars.css">
+    <link rel="stylesheet" href="../setting/font.css">
+    <link rel="stylesheet" href="../setting/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <header id="header">
+        <section class="pc">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt="이음 홈">
+                    </a>
+                </h1>
+
+                <nav class="nav bodylarge_18px" aria-label="주요 메뉴">
+                    <ul>
+                        <li><a href="sub1page.html">생활정보</a></li>
+                        <li><a href="sub2page.html">의료·도움</a></li>
+                        <li><a href="sub3page.html">취업서비스</a></li>
+                        <li><a href="sub4page.html">정보공유</a></li>
+                    </ul>
+                </nav>
+
+                <div class="subnav body_14px">
+                    <a class="mypage-link" href="mypage.html" aria-current="page">마이페이지</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="main" class="mypage">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="현재 위치">
+                <a href="index.html">홈</a> &gt; 마이페이지
+            </nav>
+
+            <section class="mypage-heading" aria-labelledby="mypage-title">
+                <h2 id="mypage-title">마이페이지</h2>
+                <p>저장한 정보와 내가 작성한 글을 확인할 수 있습니다.</p>
+            </section>
+
+            <section class="mypage-menu" aria-label="마이페이지 메뉴">
+                <a class="mypage-card" href="#saved-information">
+                    <span class="mypage-card__icon" aria-hidden="true">♡</span>
+                    <span class="mypage-card__content">
+                        <strong>저장한 정보</strong>
+                        <small>다시 보고 싶은 정보를 확인하세요.</small>
+                    </span>
+                    <span class="mypage-card__arrow" aria-hidden="true">›</span>
+                </a>
+
+                <a class="mypage-card" href="#saved-notices">
+                    <span class="mypage-card__icon" aria-hidden="true">✓</span>
+                    <span class="mypage-card__content">
+                        <strong>관심 공고</strong>
+                        <small>저장한 사업·채용 공고를 확인하세요.</small>
+                    </span>
+                    <span class="mypage-card__arrow" aria-hidden="true">›</span>
+                </a>
+
+                <a class="mypage-card" href="#my-posts">
+                    <span class="mypage-card__icon" aria-hidden="true">▤</span>
+                    <span class="mypage-card__content">
+                        <strong>내가 쓴 글</strong>
+                        <small>작성한 게시글과 댓글을 확인하세요.</small>
+                    </span>
+                    <span class="mypage-card__arrow" aria-hidden="true">›</span>
+                </a>
+            </section>
+
+            <section class="mypage-list" id="saved-information" aria-labelledby="saved-information-title">
+                <h3 id="saved-information-title">저장한 정보</h3>
+                <p class="mypage-empty">저장한 정보가 없습니다.</p>
+            </section>
+
+            <section class="mypage-list" id="saved-notices" aria-labelledby="saved-notices-title">
+                <h3 id="saved-notices-title">관심 공고</h3>
+                <p class="mypage-empty">저장한 공고가 없습니다.</p>
+            </section>
+
+            <section class="mypage-list" id="my-posts" aria-labelledby="my-posts-title">
+                <h3 id="my-posts-title">내가 쓴 글</h3>
+                <p class="mypage-empty">작성한 글이 없습니다.</p>
+            </section>
+
+            <div class="mypage-actions">
+                <a class="mypage-home-button" href="index.html">홈으로 돌아가기</a>
+                <a class="mypage-logout" href="index.html">로그아웃</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="../js/mobile-menu.js"></script>
+</body>
+
+</html>

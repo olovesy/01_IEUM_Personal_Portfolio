@@ -1,37 +1,205 @@
 @charset "utf-8";
-@media(max-width:1440px){
-    .container{width: 100%;}
-    
-    
-}
 
+/* --------------------------------------------------
+   기본 반응형 설정
+-------------------------------------------------- */
+
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+}
 
 @media (max-width: 1024px) {
-    #banner .banner_img img{
-    
-object-position: center;
+    #banner .banner_img img {
+        object-position: center;
+    }
+}
 
-}
-}
-@media(max-width:768px){
+@media (max-width: 768px) {
+    
+     #header .pc > .container {
+        position: relative;
+    }
+
+    #header .nav,
+    #header .subnav {
+        display: none;
+    }
+
+
     .logo img {
         width: 150px;
     }
-    /* .banner_title {
-        font-size: 2rem;
-    } */
-
-    /* .banner_desc {
-        font-size: 1rem;
-    } */
-}
-@media (max-width: 480px) {
-    .logo img {
-        width: 110px;
+    
+    /* 모바일 */
+    .mobile-menu-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 52px;
+        min-height: 52px;
+        gap: 3px;
+        padding: 6px;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: #1e2124;
+        font-size: 12px;
+        cursor: pointer;
     }
+
+    .mobile-menu-button:hover,
+    .mobile-menu-button:focus-visible {
+        background: #ecf3fe;
+    }
+
+    .mobile-menu-button__lines {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 25px;
+        margin-bottom: 2px;
+    }
+
+    .mobile-menu-button__lines i {
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background: #063a74;
+    }
+
+    .mobile-menu-panel {
+        position: fixed;
+        inset: 0;
+        z-index: 3000;
+        display: block;
+        visibility: hidden;
+        background: rgb(0 0 0 / 45%);
+        opacity: 0;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .mobile-menu-panel__inner {
+        display: flex;
+        width: min(86vw, 380px);
+        height: 100%;
+        margin-left: auto;
+        padding: 28px 22px;
+        overflow-y: auto;
+        flex-direction: column;
+        background: #fff;
+        transform: translateX(100%);
+        transition: transform 0.25s ease;
+    }
+
+    .mobile-menu-panel__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #cdd1d5;
+    }
+
+    .mobile-menu-panel__header h2 {
+        margin: 0;
+        color: #1e2124;
+        font-size: 28px;
+    }
+
+    .mobile-menu-close {
+        width: 40px;
+        height: 32px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: #555;
+        font-size: 13px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .mobile-menu-close:hover,
+    .mobile-menu-close:focus-visible {
+        color: #0b50d0;
+        text-decoration: underline;
+    }
+
+    .mobile-menu-list {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin: 0;
+        padding: 12px 0 0;
+        list-style: none;
+    }
+
+    .mobile-menu-list li {
+        border-bottom: 1px solid #edf0f2;
+    }
+
+    .mobile-menu-list a {
+        display: flex;
+        align-items: center;
+        min-height: 76px;
+        gap: 18px;
+        padding: 12px 10px;
+        border-radius: 8px;
+        color: #1e2124;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .mobile-menu-list a:hover,
+    .mobile-menu-list a:focus-visible {
+        background: #ecf3fe;
+        color: #063a74;
+    }
+
+
+    .mobile-menu-list__mypage {
+        margin-top: auto;
+        padding-top: 0;
+    }
+
+    .mobile-menu-list__mypage a {
+        color: #063a74;
+    }
+/* 마이페이지 */
+.mypage-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .mypage-card {
+        min-height: 88px;
+    }
+
+
+    body.mobile-menu-open {
+        overflow: hidden;
+    }
+
+    body.mobile-menu-open .mobile-menu-panel {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    body.mobile-menu-open .mobile-menu-panel__inner {
+        transform: translateX(0);
+    }
+    
+    
+    
 }
 
-/* 모바일 */
+/* --------------------------------------------------
+   모바일 공통 설정
+-------------------------------------------------- */
+
 @media (max-width: 600px) {
     #header .pc > .container {
         overflow-x: visible;
@@ -45,25 +213,107 @@ object-position: center;
         margin-left: 6px;
     }
 
-    #banner .banner_content {
-        width: 100%;
-        white-space: normal;
-        padding-left: 10px;
-        padding-right: 10px;
+    /* 마이페이지 */
+    .mypage {
+        padding-bottom: 56px;
     }
 
+    .mypage .breadcrumb {
+        margin-bottom: 24px;
+    }
+
+    .mypage-heading h2 {
+        font-size: 28px;
+    }
+
+    .mypage-heading p {
+        font-size: 14px;
+    }
+
+    .mypage-menu {
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .mypage-card {
+        padding: 16px;
+    }
+
+    .mypage-list {
+        padding: 20px 0;
+    }
+
+    .mypage-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+
+
+    #banner .banner_content {
+        width: 100%;
+        padding: 0 10px;
+        white-space: normal;
+    }
+
+    /* 메인 페이지 그리드 */
     .notice_grid,
     .split_home,
     .institution_grid {
         grid-template-columns: 1fr;
     }
+
+    /* 검색 및 필터 영역 */
+    .filter-box {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .filter-box select,
+    .filter-box input,
+    .blue-button {
+        width: 100%;
+    }
+
+    .filter-box input {
+        flex: none;
+        min-width: 0;
+        height: 40px;
+    }
+
+    /* 생활정보 목록 */
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* 의료 목록 */
+    .medical-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* 페이지네이션 */
+    .pagination {
+        gap: 10px;
+        margin-top: 50px;
+        font-size: 14px;
+    }
 }
 
-a:focus,
-button:focus,
-input:focus {
-    outline: 2px solid #125bd1;
-    outline-offset: 2px;
+
+
+
+
+/* --------------------------------------------------
+   작은 모바일 화면
+-------------------------------------------------- */
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 110px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -80,4 +330,31 @@ input:focus {
         margin-left: 4px;
         font-size: 12px;
     }
+
+    /* 마이페이지 */
+        .mobile-menu-button {
+        width: 46px;
+        min-height: 46px;
+    }
+
+    .mobile-menu-panel__inner {
+        width: 90vw;
+        padding: 22px 16px;
+    }
+
+    .mobile-menu-list a {
+        min-height: 68px;
+        font-size: 18px;
+    }
+}
+
+/* --------------------------------------------------
+   키보드 접근성
+-------------------------------------------------- */
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #125bd1;
+    outline-offset: 2px;
 }
