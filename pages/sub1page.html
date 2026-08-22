@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생활정보 | 이음</title>
+  <link rel="stylesheet" href="../setting/vars.css">
+  <link rel="stylesheet" href="../setting/font.css">
+  <link rel="stylesheet" href="../setting/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header id="header">
+    <section class="pc">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html"><img src="../img/logo.png" alt="이음 홈"></a>
+        </h1>
+        <nav class="nav bodylarge_18px" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="sub1page.html" aria-current="page">생활정보</a></li>
+            <li><a href="sub2page.html">의료·도움</a></li>
+            <li><a href="sub3page.html">취업서비스</a></li>
+            <li><a href="sub4page.html">정보공유</a></li>
+          </ul>
+        </nav>
+        <div class="subnav body_14px">
+          <a class="login-button" href="#login">로그인</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="container">
+        <figure class="banner_img">
+          <img src="../img/bannerimg.png" alt="함께하는 이웃">
+        </figure>
+        <div class="banner_content">
+          <h2 class="banner_title">장애인과 가족을 위한 정보 커뮤니티</h2>
+          <p class="body_1rem">필요한 정보를 찾고 서로의 경험을 이어보세요.</p>
+          <form class="search_box body_1rem" id="search">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" aria-label="생활정보 검색" placeholder="생활·의료·복지·취업 정보를 검색해 보세요.">
+            <button type="submit">검색</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <div class="container breadcrumb" aria-label="현재 위치">
+      <a href="index.html">⌂ 홈</a>
+      <span> &gt; </span>
+      <strong>생활정보</strong>
+    </div>
+
+    <section class="subpage container" aria-labelledby="page-title">
+      <h2 id="page-title">생활정보</h2>
+
+      <div class="category-tabs" role="tablist" aria-label="생활정보 분류">
+        <button type="button" class="active" role="tab" aria-selected="true">전체</button>
+        <button type="button" role="tab" aria-selected="false">교통</button>
+        <button type="button" role="tab" aria-selected="false">주거</button>
+        <button type="button" role="tab" aria-selected="false">문화·여가</button>
+        <button type="button" role="tab" aria-selected="false">보조기기</button>
+        <button type="button" role="tab" aria-selected="false">일상생활</button>
+      </div>
+
+      <div class="filter-box">
+        <label for="area">지역</label>
+        <select id="area" name="area">
+          <option>전체 지역</option>
+          <option>서울특별시</option>
+          <option>경기도</option>
+          <option>부산광역시</option>
+        </select>
+        <label for="district">시·군·구</label>
+        <select id="district" name="district">
+          <option>전체</option>
+          <option>강남구</option>
+          <option>마포구</option>
+          <option>송파구</option>
+        </select>
+        <label class="search-label" for="life-search">검색</label>
+        <input id="life-search" type="search" placeholder="검색어를 입력하세요.">
+        <button type="button" class="blue-button">검색</button>
+      </div>
+
+      <div class="list-head">
+        <p>생활정보 <strong>24</strong>건</p>
+        <label for="sort" class="sr-only">정렬 방법</label>
+        <select id="sort">
+          <option>최신순</option>
+          <option>인기순</option>
+        </select>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>장애인 이동지원 서비스</h3>
+          <p>교통약자의 이동을 돕는 지역별 지원 서비스를 안내합니다.</p>
+          <span>서울특별시 · 교통</span>
+          <a href="#detail">자세히 보기</a>
+        </article>
+        <article class="info-card">
+          <h3>장애인 주거 편의 지원</h3>
+          <p>주거환경 개선과 편의시설 설치 지원 정보를 확인하세요.</p>
+          <span>경기도 · 주거</span>
+          <a href="#detail">자세히 보기</a>
+        </article>
+        <article class="info-card">
+          <h3>무장애 문화시설 안내</h3>
+          <p>휠체어 접근이 가능한 문화·여가 시설을 소개합니다.</p>
+          <span>서울특별시 · 문화·여가</span>
+          <a href="#detail">자세히 보기</a>
+        </article>
+        <article class="info-card">
+          <h3>보조기기 대여 서비스</h3>
+          <p>일상생활에 필요한 보조기기 대여 방법과 기관을 안내합니다.</p>
+          <span>부산광역시 · 보조기기</span>
+          <a href="#detail">자세히 보기</a>
+        </article>
+      </div>
+
+      <nav class="pagination" aria-label="페이지 이동">
+        <a href="#previous">&lt; 이전</a>
+        <a class="current" href="#page1" aria-current="page">1</a>
+        <a href="#page2">2</a>
+        <a href="#page3">3</a>
+        <a href="#page4">4</a>
+        <a href="#page5">5</a>
+        <span>...</span>
+        <a href="#page99">99</a>
+        <a href="#next">다음 &gt;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+</body>
+</html>
+
+<style>
+/* 생활정보 서브페이지 */
+.subpage { padding-bottom: 80px; }
+.subpage > h2 { margin: 30px 0 20px; font-size: 32px; }
+.category-tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.category-tabs button { padding: 10px 18px; border: 1px solid #cdd1d5; border-radius: 6px; background: #fff; cursor: pointer; }
+.category-tabs button.active, .category-tabs button:hover { background: #0b50d0; color: #fff; border-color: #0b50d0; }
+.filter-box { display: flex; gap: 8px; align-items: center; padding: 18px; margin-bottom: 24px; border: 1px solid #cdd1d5; background: #f4f5f6; }
+.filter-box select, .filter-box input, .list-head select { height: 40px; padding: 0 10px; border: 1px solid #aaa; border-radius: 4px; background: #fff; }
+.filter-box input { flex: 1; min-width: 140px; }
+.blue-button { height: 40px; padding: 0 18px; border: 0; border-radius: 4px; background: #0b50d0; color: #fff; cursor: pointer; }
+.list-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.list-head p { margin: 0; }
+.list-head strong { color: #0b50d0; }
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.info-card { min-height: 140px; padding: 24px; border: 1px solid #cdd1d5; border-radius: 16px; background: #fff; }
+.info-card h3 { margin: 0 0 12px; font-size: 20px; }
+.info-card p { min-height: 42px; margin: 0 0 16px; color: #555; line-height: 1.5; }
+.info-card span { display: block; margin-bottom: 14px; color: #0b50d0; font-size: 14px; }
+.info-card a { color: #333; text-decoration: underline; }
+.pagination { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 90px; }
+.pagination a { color: #333; }
+.pagination .current { padding: 10px 14px; border-radius: 5px; background: #063a74; color: #fff; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) {
+  .filter-box { align-items: stretch; flex-direction: column; }
+  .filter-box select, .filter-box input, .blue-button { width: 100%; }
+  .info-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pagination { gap: 10px; margin-top: 50px; font-size: 14px; }
+}
+</style>
