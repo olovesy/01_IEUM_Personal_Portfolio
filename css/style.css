@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+
+
+html
+/* 헤더 */
+
+#header {
+    width: 100%;
+}
+
+/* 공통 컨테이너 */
+.container {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 헤더 메뉴 */
+#header .pc > .container {
+    display: flex;
+    align-items: center;
+    /* background-color: #c7e5c9; */
+}
+
+/* 로고 */
+.logo {
+    flex-shrink: 0;
+    margin: 0 auto 0 0;
+}
+
+.logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+/* 네비게이션 */
+.nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    flex-shrink: 0;
+}
+
+.nav ul li a {
+    display: block;
+    margin: 0 18px;
+    line-height: 95px;
+    white-space: nowrap;
+}
+
+/* 로그인·번역 */
+.subnav {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    line-height: 95px;
+    white-space: nowrap;
+}
+
+/* 배너 */
+#banner {
+    width: min(1440px, 100%);
+    margin: 0 auto;
+    height: 260px;
+    min-height: 260px;
+    
+   
+}
+#banner .banner_img{
+    margin: 0;
+}
+#banner .banner_img img{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: 260px;
+    object-fit: cover;
+object-position: right;
+
+}
+
+/* 배경 이미지 위 콘텐츠 */
+#banner .banner_content {
+    position: relative;
+    top: -231px;
+    left: 0;
+    z-index: 1;
+    width: 58%;
+    padding: 28px 0 32px 20px;
+    white-space: nowrap
+;
+}
+
+#banner .banner_content h2 {
+    margin: 0 0 6px;
+    color: var(--black100);
+    line-height: 1.25;
+    word-break: keep-all;
+}
+
+#banner .banner_content p {
+    margin: 0 0 16px;
+    color: var(--black100);
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 검색창 */
+#banner .search_box {
+    display: flex;
+    width: min(100%, 560px);
+    height: 62px;
+}
+
+#banner .search_box input {
+    flex: 1;
+    min-width: 0;
+    padding: 0 18px;
+    border: 1px solid #777;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    background-color: var(--white);
+    color: var(--black100);
+   
+}
+
+#banner .search_box input:focus {
+    border-color: var(--maincolor);
+}
+
+#banner .search_box button {
+    flex-shrink: 0;
+    width: 78px;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--maincolor);
+    color: var(--white);
+    
+}
+
+#banner .search_box button:hover {
+    background-color: var(--footerBg-color);
+}
+
+/* 메인 데이터 영역 추가 스타일: 기존 스타일은 그대로 유지합니다. */
+.breadcrumb {
+    max-width: 1200px;
+    margin: 12px auto 30px;
+    font-size: 14px;
+    color: #39424e
+}
+
+.home_section {
+    padding: 28px 0
+}
+
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px
+}
+
+.section_title h2 {
+    margin: 0;
+    font-size: 28px
+}
+
+.section_title a {
+    color: #333;
+    font-size: 15px
+}
+
+.notice_grid,
+.institution_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px
+}
+
+.data_empty,
+.data_card,
+.institution_grid article,
+.data_panel {
+    min-height: 180px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    background: #fff;
+    padding: 24px
+}
+
+.data_empty {
+    color: #a0a0a0
+}
+
+.data_card h3 {
+    margin: 16px 0 10px;
+    font-size: 19px
+}
+
+.data_card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6
+}
+
+.data_card span {
+    color: #1764ca;
+    font-size: 13px
+}
+
+.data_card small,
+.data_panel small {
+    display: block;
+    color: #9a9a9a;
+    margin-top: 16px
+}
+
+.split_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px
+}
+
+.data_panel {
+    min-height: 250px;
+    color: #888
+}
+
+.data_panel p {
+    border-bottom: 1px solid #eee;
+    padding: 13px 0;
+    margin: 0;
+    color: #444
+}
+
+.data_panel p b {
+    color: #1764ca;
+    margin-right: 8px
+}
+
+.institution_grid article {
+    min-height: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #123e73
+}
+
+.institution_grid article:after {
+    content: '기관 정보 보기 →';
+    display: block;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #777;
+    font-weight: 400
+}
+
+#footer {
+    height: 160px;
+    margin-top: 50px;
+    background: #0d4077
+}
+
+#banner,
+.banner {
+    
+}
+
+
+
+
+
+
+
+
+
+
+    

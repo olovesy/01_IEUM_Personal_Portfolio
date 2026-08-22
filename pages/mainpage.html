@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이음</title>
+  <link rel="stylesheet" href="../setting/vars.css">
+  <link rel="stylesheet" href="../setting/font.css">
+  <link rel="stylesheet" href="../setting/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+  <header id="header">
+    <section class="pc">
+      <div class="container">
+        <h1 class="logo"><a href="mainpage.html"><img src="../img/logo.png" alt="이음 홈"></a></h1>
+        <nav class="nav bodylarge_18px">
+          <ul>
+            <li><a href="#search">통합검색</a></li>
+            <li><a href="#life">생활정보</a></li>
+            <li><a href="#care">의료 도움</a></li>
+            <li><a href="#jobs">취업서비스</a></li>
+          </ul>
+        </nav>
+        <div class="subnav body_14px">
+          <div class="login"><a class="login-button" href="#login">로그인</a></div>
+        </div>
+      </div>
+    </section>
+    <section id="banner">
+      <div class="container">
+        <figure class="banner_img">
+          <img src="../img/bannerimg.png" alt="함께하는 이웃">
+        </figure>
+        <div class="banner_content">
+          <h2 class="banner_title">장애인과 가족을 위한 정보 커뮤니티</h2>
+          <p class="body_1rem">필요한 정보를 찾고 서로의 경험을 이어보세요.</p>
+          <form class="search_box body_1rem" id="search"><span aria-hidden="true">⌕</span><input name="query"
+              type="search" placeholder="생활·의료·복지·취업 정보를 검색해 보세요."c>
+              <button type="submit">검색</button></form>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main id="main">
+    <div class="container breadcrumb">⌂ 홈</div>
+    <section class="home_section">
+      <div class="container">
+        <div class="section_title">
+          <h2>최신 장애인 사업 공지</h2><a href="#more">더보기</a>
+        </div>
+        <div class="notice_grid" id="latest-notices">
+          <div class="data_empty">데이터를 불러오는 중입니다.</div>
+          <div class="data_empty"></div>
+          <div class="data_empty"></div>
+        </div>
+      </div>
+    </section>
+    <section class="home_section">
+      <div class="container split_home">
+        <div>
+          <div class="section_title">
+            <h2>최신정보</h2><a href="#more">더보기</a>
+          </div>
+          <div class="data_panel" id="latest-list">데이터를 불러오는 중입니다.</div>
+        </div>
+        <div>
+          <div class="section_title">
+            <h2>인기게시글</h2><a href="#more">더보기</a>
+          </div>
+          <div class="data_panel" id="popular-list">데이터를 불러오는 중입니다.</div>
+        </div>
+      </div>
+    </section>
+    <section class="home_section">
+      <div class="container">
+        <div class="section_title">
+          <h2>추천기관</h2><a href="#more">더보기</a>
+        </div>
+        <div class="institution_grid">
+          <article>지역 장애인복지관</article>
+          <article>외국인 주민 지원센터</article>
+          <article>고용복지플러스센터</article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+  <script src="../js/mainpage.js"></script>
+</body>
+
+</html>

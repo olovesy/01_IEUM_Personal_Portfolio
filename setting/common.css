@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color:var(--black100);
+}
+li{
+    list-style: none;
+}
+
+
+
+
+/* 글씨 */
+
+
+/* 헤더 */
+#header{
+    
+}
+/* 배너 */
+.banner_title{
+    font-size: clamp(2rem, 5vw, 2.5rem); /* 40px */
+    font-weight: 700;
+}
+
+.headeing_32px{
+    font-size: clamp(1.5rem, 4vw, 2rem); /* 32px */
+    font-weight: 700;
+    
+}
+
+.banner_desc{
+    font-size: clamp(1rem, 3vw, 1.5rem); /* 24px */
+}
+
+.bodylarge_18px{
+    font-size: clamp(0.875rem, 2vw, 1.125rem); /*18px*/
+    white-space: nowrap;
+}
+
+/* 로그인, 더보기 */
+.body_1rem{
+    font-size: clamp(0.875rem, 1.5vw, 1rem); /*16px*/
+    white-space: nowrap;
+}
+.body_14px{
+     font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+    white-space: nowrap;
+}

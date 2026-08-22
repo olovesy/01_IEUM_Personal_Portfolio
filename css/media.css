@@ -1,0 +1,60 @@
+@charset "utf-8";
+@media(max-width:1440px){
+    .container{width: 100%;}
+    
+    
+}
+
+
+@media (max-width: 1024px) {
+    #banner .banner_img img{
+    
+object-position: center;
+
+}
+}
+@media(max-width:768px){
+    .logo img {
+        width: 150px;
+    }
+    /* .banner_title {
+        font-size: 2rem;
+    } */
+
+    /* .banner_desc {
+        font-size: 1rem;
+    } */
+}
+@media (max-width: 480px) {
+    .logo img {
+        width: 110px;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+    #header .pc > .container {
+        /* overflow-x: auto; */
+    }
+
+    .nav ul li a {
+        margin: 0 6px;
+    }
+
+    .subnav {
+        margin-left: 6px;
+    }
+
+    #banner .banner_content {
+        width: 100%;
+        white-space: normal;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .notice_grid,
+    .split_home,
+    .institution_grid {
+        grid-template-columns: 1fr;
+    }
+}

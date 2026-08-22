@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+:root {
+	/* --mainEng-font: "Montserrat"; */
+	--mainKor-font: "Pretendard";
+
+	--maincolor: #0B50D0; 
+    --footerBg-color: #063A74;
+	--subBg100: #ECF3FE;
+
+	--white: #fff;
+	--black: #000;
+	--black100: #1E2124;
+	--black200: #CDD1D5;
+
+
+	/* 기본 폰트 설정 */
+	font-family: var(--mainEng-font), var(--mainKor-font);
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+
+	/* 폰트를 부드럽게 렌더링하기 위한 속성  */
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* 아이폰 가로 모드에서 글씨 확대 금지 */
+	-webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 800px) {
+	:root {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+}
+
+body {
+	color: var(--black100);
+	background-color: var(--mainBg-color);
+}
+
+
+
