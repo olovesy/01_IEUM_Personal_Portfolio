@@ -1,10 +1,10 @@
 @charset "utf-8";
 
+/* ==================================================
+   공통 기본 스타일
+================================================== */
 
-
-html
-
-.skip-link {
+html .skip-link {
     position: absolute;
     top: -48px;
     left: 10px;
@@ -19,27 +19,36 @@ html
     top: 10px;
 }
 
-/* 헤더 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 #header {
     width: 100%;
 }
 
-/* 공통 컨테이너 */
 .container {
     width: calc(100% - 20px);
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* 헤더 메뉴 */
+/* ==================================================
+   헤더
+================================================== */
+
 #header .pc > .container {
     display: flex;
     align-items: center;
-    /* background-color: #c7e5c9; */
 }
 
-/* 로고 */
 .logo {
     flex-shrink: 0;
     margin: 0 auto 0 0;
@@ -51,7 +60,6 @@ html
     height: auto;
 }
 
-/* 네비게이션 */
 .nav ul {
     display: flex;
     align-items: center;
@@ -70,7 +78,6 @@ html
     white-space: nowrap;
 }
 
-/* 로그인·번역 */
 .subnav {
     display: flex;
     align-items: center;
@@ -80,29 +87,32 @@ html
     white-space: nowrap;
 }
 
-/* 배너 */
+/* ==================================================
+   배너
+================================================== */
+
 #banner {
     width: min(1440px, 100%);
-    margin: 0 auto;
     height: 260px;
     min-height: 260px;
-    
-   
+    margin: 0 auto;
 }
-#banner .banner_img{
+
+#banner .banner_img {
     margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
 }
-#banner .banner_img img{
+
+#banner .banner_img img {
     display: block;
     width: 100%;
     max-width: 1200px;
     height: 260px;
     object-fit: cover;
-object-position: right;
-
+    object-position: right;
 }
 
-/* 배경 이미지 위 콘텐츠 */
 #banner .banner_content {
     position: relative;
     top: -231px;
@@ -110,8 +120,7 @@ object-position: right;
     z-index: 1;
     width: 58%;
     padding: 28px 0 32px 20px;
-    white-space: nowrap
-;
+    white-space: nowrap;
 }
 
 #banner .banner_content h2 {
@@ -128,7 +137,6 @@ object-position: right;
     word-break: keep-all;
 }
 
-/* 검색창 */
 #banner .search_box {
     display: flex;
     width: min(100%, 560px);
@@ -145,7 +153,6 @@ object-position: right;
     outline: none;
     background-color: var(--white);
     color: var(--black100);
-   
 }
 
 #banner .search_box input:focus {
@@ -159,47 +166,49 @@ object-position: right;
     border-radius: 0 8px 8px 0;
     background-color: var(--maincolor);
     color: var(--white);
-    
 }
 
 #banner .search_box button:hover {
     background-color: var(--footerBg-color);
 }
 
-/* 메인 데이터 영역 추가 스타일: 기존 스타일은 그대로 유지합니다. */
+/* ==================================================
+   메인 페이지
+================================================== */
+
 .breadcrumb {
     max-width: 1200px;
     margin: 12px auto 30px;
+    color: #39424e;
     font-size: 14px;
-    color: #39424e
 }
 
 .home_section {
-    padding: 28px 0
+    padding: 28px 0;
 }
 
 .section_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 18px
+    margin-bottom: 18px;
 }
 
 .section_title h2 {
     margin: 0;
-    font-size: 28px
+    font-size: 28px;
 }
 
 .section_title a {
     color: #333;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .notice_grid,
 .institution_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px
+    gap: 22px;
 }
 
 .data_empty,
@@ -207,96 +216,533 @@ object-position: right;
 .institution_grid article,
 .data_panel {
     min-height: 180px;
+    padding: 24px;
     border: 1px solid #ddd;
     border-radius: 18px;
     background: #fff;
-    padding: 24px
 }
 
 .data_empty {
-    color: #a0a0a0
+    color: #a0a0a0;
 }
 
 .data_card h3 {
     margin: 16px 0 10px;
-    font-size: 19px
+    font-size: 19px;
 }
 
 .data_card p {
     color: #666;
     font-size: 14px;
-    line-height: 1.6
+    line-height: 1.6;
 }
 
 .data_card span {
     color: #1764ca;
-    font-size: 13px
+    font-size: 13px;
 }
 
 .data_card small,
 .data_panel small {
     display: block;
+    margin-top: 16px;
     color: #9a9a9a;
-    margin-top: 16px
 }
 
 .split_home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px
+    gap: 28px;
 }
 
 .data_panel {
     min-height: 250px;
-    color: #888
+    color: #888;
 }
 
 .data_panel p {
-    border-bottom: 1px solid #eee;
-    padding: 13px 0;
     margin: 0;
-    color: #444
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
 }
 
 .data_panel p b {
+    margin-right: 8px;
     color: #1764ca;
-    margin-right: 8px
 }
 
 .institution_grid article {
     min-height: 150px;
+    color: #123e73;
     font-size: 20px;
     font-weight: 700;
-    color: #123e73
 }
 
-.institution_grid article:after {
-    content: '기관 정보 보기 →';
+.institution_grid article::after {
     display: block;
     margin-top: 18px;
-    font-size: 13px;
+    content: "기관 정보 보기 →";
     color: #777;
-    font-weight: 400
+    font-size: 13px;
+    font-weight: 400;
 }
 
 #footer {
     height: 160px;
     margin-top: 50px;
-    background: #0d4077
+    background: #0d4077;
 }
 
-#banner,
-.banner {
-    
+/* ==================================================
+   서브페이지 공통
+================================================== */
+
+.subpage {
+    padding-bottom: 80px;
 }
 
+.subpage > h2 {
+    margin: 30px 0 20px;
+    font-size: 32px;
+}
 
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
 
+.category-tabs button {
+    padding: 10px 18px;
+    border: 1px solid #cdd1d5;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
 
+.category-tabs button:hover,
+.category-tabs button.active {
+    border-color: #0b50d0;
+    background: #0b50d0;
+    color: #fff;
+}
 
+.filter-box,
+.community-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px;
+    margin-bottom: 24px;
+    border: 1px solid #cdd1d5;
+    background: #f4f5f6;
+}
 
+.filter-box {
+    flex-wrap: wrap;
+}
 
+.filter-box select,
+.filter-box input,
+.community-search input,
+.list-head select {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: #fff;
+}
 
+.filter-box input,
+.community-search input {
+    flex: 1 1 320px;
+    min-width: 320px;
+}
 
+.blue-button {
+    height: 40px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 4px;
+    background: #0b50d0;
+    color: #fff;
+    cursor: pointer;
+}
 
-    
+.blue-button:hover,
+.write-button:hover {
+    background: #063a74;
+}
+
+.list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.list-head p {
+    margin: 0;
+}
+
+.list-head strong {
+    color: #0b50d0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 90px;
+}
+
+.pagination a {
+    color: #333;
+}
+
+.pagination .current {
+    padding: 10px 14px;
+    border-radius: 5px;
+    background: #063a74;
+    color: #fff;
+}
+
+/* ==================================================
+   생활정보
+================================================== */
+
+.info-grid,
+.medical-list,
+.job-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.info-card {
+    min-height: 140px;
+    padding: 24px;
+    border: 1px solid #cdd1d5;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.info-card h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.info-card p {
+    min-height: 42px;
+    margin: 0 0 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-card span {
+    display: block;
+    margin-bottom: 14px;
+    color: #0b50d0;
+    font-size: 14px;
+}
+
+.info-card a,
+.medical-card > a,
+.job-card a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* ==================================================
+   의료 도움
+================================================== */
+
+.notice-text {
+    margin: 0 0 20px;
+    color: #555;
+}
+
+.medical-card {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    min-height: 170px;
+    padding: 22px;
+    border: 1px solid #cdd1d5;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.medical-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #eaf1ff;
+    color: #0b50d0;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.medical-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.medical-card p {
+    margin: 0 0 10px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.medical-card span {
+    display: block;
+    margin-bottom: 8px;
+    color: #0b50d0;
+    font-size: 14px;
+}
+
+.medical-card .phone {
+    color: #333;
+    font-size: 14px;
+}
+
+.medical-card > a {
+    grid-column: 2;
+}
+
+/* ==================================================
+   취업 서비스
+================================================== */
+
+.job-card {
+    padding: 22px;
+    border: 1px solid #cdd1d5;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.job-card h3 {
+    margin: 12px 0 10px;
+    font-size: 20px;
+}
+
+.job-card p {
+    margin: 0 0 12px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.job-card > span:not(.job-tag) {
+    display: block;
+    margin-bottom: 10px;
+    color: #0b50d0;
+    font-size: 14px;
+}
+
+.job-card b {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.job-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #eaf1ff;
+    color: #0b50d0;
+    font-size: 13px;
+}
+
+/* ==================================================
+   정보공유
+================================================== */
+
+.community-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+
+.community-title h2 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.community-title p {
+    margin: 0;
+    color: #555;
+}
+
+.community-search label {
+    white-space: nowrap;
+}
+
+.write-button {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    background: #0b50d0;
+    color: #fff;
+}
+
+.post-list {
+    border-top: 2px solid #333;
+}
+
+.post-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 18px;
+    padding: 22px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-category {
+    color: #0b50d0;
+    font-size: 14px;
+}
+
+.post-item h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.post-item h3 a {
+    color: #222;
+}
+
+.post-item p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.post-item small {
+    color: #777;
+}
+
+/* ==================================================
+   포커스 접근성
+================================================== */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 2px solid #125bd1;
+    outline-offset: 2px;
+}
+
+/* ==================================================
+   반응형
+================================================== */
+
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #banner .banner_img img {
+        object-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header .pc > .container {
+        overflow-x: visible;
+    }
+
+    .nav ul li a {
+        margin: 0 6px;
+    }
+
+    .subnav {
+        margin-left: 6px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    #banner .banner_content {
+        width: 100%;
+        padding: 28px 10px 32px;
+        white-space: normal;
+    }
+
+    .notice_grid,
+    .institution_grid,
+    .split_home,
+    .info-grid,
+    .medical-list,
+    .job-list {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-box,
+    .community-search {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .filter-box select,
+    .filter-box input,
+    .filter-box .blue-button,
+    .community-search input,
+    .community-search .blue-button {
+        width: 100%;
+    }
+
+    .filter-box input,
+    .community-search input {
+        flex: none;
+        min-width: 0;
+        height: 40px;
+    }
+
+    .community-title {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .post-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .pagination {
+        gap: 10px;
+        margin-top: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo img {
+        width: 90px;
+    }
+
+    .nav ul li a {
+        margin: 0 3px;
+        font-size: 12px;
+    }
+
+    .subnav {
+        margin-left: 4px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보공유 | 이음</title>
+  <link rel="stylesheet" href="../setting/vars.css">
+  <link rel="stylesheet" href="../setting/font.css">
+  <link rel="stylesheet" href="../setting/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header id="header">
+    <section class="pc">
+      <div class="container">
+        <h1 class="logo"><a href="index.html"><img src="../img/logo.png" alt="이음 홈"></a></h1>
+        <nav class="nav bodylarge_18px" aria-label="주요 메뉴"><ul>
+          <li><a href="sub1page.html">생활정보</a></li>
+          <li><a href="sub2page.html">의료·도움</a></li>
+          <li><a href="sub3page.html">취업서비스</a></li>
+          <li><a href="sub4page.html" aria-current="page">정보공유</a></li>
+        </ul></nav>
+        <div class="subnav body_14px"><a class="login-button" href="#login">로그인</a></div>
+      </div>
+    </section>
+    <section id="banner"><div class="container">
+      <figure class="banner_img"><img src="../img/bannerimg.png" alt="함께하는 이웃"></figure>
+      <div class="banner_content">
+        <h2 class="banner_title">장애인과 가족을 위한 정보 커뮤니티</h2>
+        <p class="body_1rem">필요한 정보를 찾고 서로의 경험을 이어보세요.</p>
+        <form class="search_box body_1rem" id="search"><span aria-hidden="true">⌕</span><input type="search" aria-label="정보공유 검색" placeholder="질문·후기·경험을 검색해 보세요."><button type="submit">검색</button></form>
+      </div>
+    </div></section>
+  </header>
+  <main id="main">
+    <div class="container breadcrumb" aria-label="현재 위치"><a href="index.html">⌂ 홈</a><span> &gt; </span><strong>정보공유</strong></div>
+    <section class="subpage container" aria-labelledby="page-title">
+      <div class="community-title"><div><h2 id="page-title">정보공유</h2><p>서로의 질문과 경험을 나누어 보세요.</p></div><a class="write-button" href="#write">글쓰기</a></div>
+      <div class="category-tabs" role="tablist" aria-label="정보공유 분류">
+        <button type="button" class="active" role="tab" aria-selected="true">전체</button>
+        <button type="button" role="tab" aria-selected="false">질문·답변</button>
+        <button type="button" role="tab" aria-selected="false">생활후기</button>
+        <button type="button" role="tab" aria-selected="false">의료·재활</button>
+        <button type="button" role="tab" aria-selected="false">취업경험</button>
+        <button type="button" role="tab" aria-selected="false">보호자 이야기</button>
+      </div>
+      <div class="community-search"><label for="post-search">게시글 검색</label><input id="post-search" type="search" placeholder="검색어를 입력하세요."><button type="button" class="blue-button">검색</button></div>
+      <div class="list-head"><p>게시글 <strong>36</strong>개</p><label for="post-sort" class="sr-only">정렬 방법</label><select id="post-sort"><option>최신순</option><option>인기순</option><option>댓글순</option></select></div>
+      <div class="post-list">
+        <article class="post-item"><span class="post-category">질문·답변</span><div><h3><a href="#post">휠체어로 이용하기 편한 문화시설을 알고 싶어요.</a></h3><p>이번 주말에 가족과 함께 방문할 수 있는 장소를 찾고 있습니다.</p><small>보호자 · 2026.08.20 · 조회 28 · 댓글 3</small></div></article>
+        <article class="post-item"><span class="post-category">생활후기</span><div><h3><a href="#post">보조기기 대여 서비스를 이용해 본 후기입니다.</a></h3><p>신청 방법과 실제 이용하면서 느낀 점을 공유합니다.</p><small>함께걷기 · 2026.08.19 · 조회 42 · 댓글 5</small></div></article>
+        <article class="post-item"><span class="post-category">의료·재활</span><div><h3><a href="#post">재활치료를 시작하기 전에 준비하면 좋은 것들</a></h3><p>처음 재활기관을 방문하는 분들에게 도움이 되길 바랍니다.</p><small>이음회원 · 2026.08.18 · 조회 35 · 댓글 4</small></div></article>
+        <article class="post-item"><span class="post-category">취업경험</span><div><h3><a href="#post">재택근무를 시작하면서 알게 된 유용한 정보</a></h3><p>업무 환경을 준비하고 회사와 소통한 경험을 나눕니다.</p><small>새로운시작 · 2026.08.17 · 조회 51 · 댓글 7</small></div></article>
+      </div>
+      <nav class="pagination" aria-label="페이지 이동"><a href="#previous">&lt; 이전</a><a class="current" href="#page1" aria-current="page">1</a><a href="#page2">2</a><a href="#page3">3</a><a href="#page4">4</a><a href="#page5">5</a><span>...</span><a href="#page36">36</a><a href="#next">다음 &gt;</a></nav>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+</body>
+</html>
+
