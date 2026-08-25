@@ -263,3 +263,30 @@
         font-size: var(--font-size-xs);
     }
 }
+/* 모바일 정보공유 버튼 오른쪽 정렬 */
+@media (max-width: 640px) {
+    .community-title > .write-button,
+    .page-title-row > .write-button {
+        display: none;
+    }
+
+    .list-head {
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .list-head p {
+        margin-right: auto;
+    }
+
+    .list-head .write-button-mobile {
+        display: inline-flex;
+        min-height: 40px;
+        align-items: center;
+        padding: 8px 14px;
+    }
+
+    .list-head select {
+        margin-left: 0;
+    }
+}

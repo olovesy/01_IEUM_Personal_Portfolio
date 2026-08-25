@@ -1027,6 +1027,10 @@ html .skip-link {
     color: var(--white);
 }
 
+.write-button-mobile {
+    display: none;
+}
+
 .post-list {
     border-top: 2px solid var(--text-default);
 }
