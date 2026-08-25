@@ -1,17 +1,70 @@
 @charset "utf-8";
 
 :root {
-	/* --mainEng-font: "Montserrat"; */
+	--mainEng-font: "Pretendard";
 	--mainKor-font: "Pretendard";
 
-	--maincolor: #0B50D0; 
+	/* 브랜드 색상 */
+	--maincolor: #0B50D0;
     --footerBg-color: #063A74;
 	--subBg100: #ECF3FE;
+	--primary-dark: #123E73;
+	--primary-link: #1764CA;
+	--primary-hover: #125BD1;
+	--primary-soft: #EAF1FF;
 
+	/* 기본·텍스트 색상 */
 	--white: #fff;
 	--black: #000;
 	--black100: #1E2124;
 	--black200: #CDD1D5;
+	--text-strong: #222;
+	--text-default: #333;
+	--text-body: #444;
+	--text-muted: #555;
+	--text-subtle: #666;
+	--text-caption: #777;
+	--text-light: #888;
+	--text-lighter: #9A9A9A;
+	--text-placeholder: #A0A0A0;
+	--text-disabled: #AAA;
+
+	/* 선·배경 색상 */
+	--border-strong: #CDD1D5;
+	--border-default: #DDD;
+	--border-light: #E3E7EC;
+	--border-lighter: #EEE;
+	--surface-muted: #F4F5F6;
+	--footer-text: #DBE8F7;
+	--footer-copy: #A9C3DF;
+	--footer-border: rgba(255, 255, 255, 0.2);
+	--card-shadow: rgb(6 58 116 / 10%);
+	--overlay-background: rgb(0 0 0 / 45%);
+	--privacy-text: #505965;
+	--privacy-intro-text: #31506F;
+	--neutral-dark: #39424E;
+
+	/* 글자 크기 */
+	--font-size-xs: 12px;
+	--font-size-sm: 13px;
+	--font-size-body-sm: 14px;
+	--font-size-body: 16px;
+	--font-size-body-large: 18px;
+	--font-size-md: 15px;
+	--font-size-icon: 23px;
+	--font-size-card: 19px;
+	--font-size-title-sm: 20px;
+	--font-size-title-md: 21px;
+	--font-size-title-lg: 26px;
+	--font-size-heading: 28px;
+	--font-size-section: 32px;
+	--font-size-privacy-title: clamp(30px, 5vw, 42px);
+	--font-size-banner: clamp(2rem, 5vw, 2.5rem);
+	--font-size-heading-responsive: clamp(1.5rem, 4vw, 2rem);
+	--font-size-description: clamp(1rem, 3vw, 1.5rem);
+	--font-size-large-responsive: clamp(0.875rem, 2vw, 1.125rem);
+	--font-size-body-responsive: clamp(0.875rem, 1.5vw, 1rem);
+	--font-size-small-responsive: clamp(0.75rem, 1.3vw, 0.875rem);
 
 
 	/* 기본 폰트 설정 */
@@ -41,6 +94,3 @@ body {
 	color: var(--black100);
 	background-color: var(--mainBg-color);
 }
-
-
-
