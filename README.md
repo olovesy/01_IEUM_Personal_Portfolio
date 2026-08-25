@@ -7,7 +7,7 @@
 ## 프로젝트 자료
 - https://olovesy.github.io/01_IEUM_Personal_Portfolio/
 
-- [Figma 디자인 보기](https://www.figma.com/design/fJSItyMUFgvEtuBVk891n8/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=0-1&t=k1FZBaG94Enfat96-1)
+- [Figma 디자인 보기](https://www.figma.com/design/fJSItyMUFgvEtuBVk891n8/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=0-1&t=0155jwNTDxnVFrZo-1)
 
 ## 주요 사용자
 
